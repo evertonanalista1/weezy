@@ -1,0 +1,142 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo */
+.fundo { 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100vw; 
+    background-image: url('img/fundo-piscina.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; /* Coloca a caixa de login e o @StarCode em coluna */
+}   
+
+/* Caixa de login */
+.login {
+    width: 350px;
+    background-color: rgba(21, 20, 51, 0.7); 
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+}
+
+.login h2 {
+    color: white;
+    margin-bottom: 20px; 
+    font-size: 2.5rem;
+}
+
+/* Formulário */
+.login form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca os elementos na vertical */
+    align-items: center; /* Centraliza todos os elementos horizontalmente */
+}
+
+/* Label */
+.label {
+    align-self: flex-start; /* Alinha o label à esquerda */
+    margin: 10px 0 5px; /* Espaçamento entre o label e o input */
+    font-size: 14px;
+    color: white; 
+}
+
+/* Campos de entrada */
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Link "Recuperar senha?" */
+.login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; 
+    margin-bottom: 15px; 
+}
+
+/* Botão */
+.login button {
+    width: 50%; 
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.login button:hover {
+    background: #0056b3;
+}   
+
+/* starcode */
+#starcode {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+#starcode a {
+    color:white;
+    text-decoration: none;
+}
+
+#starcode a:hover {
+    text-decoration: underline;
+}
+
+/* Imagem fixa no canto inferior direito */
+.imagem-fixa {
+    position: fixed; /* Fixa a posição na tela */
+    bottom: -3px; /* Distância da parte inferior */
+    right: 5px; /* Aumenta a distância da lateral direita para mover a imagem para a direita */
+    z-index: 10; /* Garante que fique acima de outros elementos */
+}
+
+.imagem-fixa img {
+    width: 28rem; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.imagem-fixa img:hover {
+    opacity: 1; /* Remove a transparência ao passar o mouse */
+}
+
+.eclipse {
+    position: absolute;
+    top: -5px; /* Ajuste a posição vertical conforme necessário */
+    left: -0.5px; /* Ajuste a posição horizontal conforme necessário */
+    width: 30rem; /* Largura total do círculo */
+    height: 30rem; /* Altura total do círculo */
+    border: solid 5rem #ffffff; /* Preenche a borda branca */
+    border-radius: 50%; /* Garante que o elemento seja um círculo perfeito */
+    background: none; /* Remove qualquer preenchimento interno */
+    z-index: -1; /* Mantém o elemento no fundo */
+}
