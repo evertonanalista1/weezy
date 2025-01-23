@@ -1,0 +1,148 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo o estilo do body */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url('caminho/para/imagem.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px; /* Espaço entre o título e os botões */
+    border-bottom: 2px solid #003366; /* Linha azul abaixo do título */
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+}
+
+
+/* Estilo para o container dos botões */
+.botoes-container {
+    display: flex;
+    gap: 20px; /* Espaço entre os botões */
+    justify-content: center; /* Alinha os botões ao centro */
+}
+
+/* Estilo para os botões */
+button {
+    width: 150px; /* Largura do botão */
+    height: 150px; /* Altura do botão */
+    display: flex;
+    flex-direction: column; /* Coloca a imagem acima do texto */
+    justify-content: center;
+    align-items: center;
+    background-color: #007BFF; /* Cor de fundo azul */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 0; /* Remove o padding padrão */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    position: relative; /* Para permitir posicionamento do texto */
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para as imagens dentro dos botões */
+button img {
+    width: 60px; /* Tamanho da imagem */
+    height: 60px; /* Tamanho da imagem */
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Adiciona um container para o texto e alinha no fundo */
+button span {
+    position: absolute;
+    bottom: 10px; /* Posiciona o texto no fundo do botão */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o texto */
+}
+
+
+
+.botao1 {
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 10px 20px; /* Ajuste o espaçamento conforme necessário */
+    background-color: #ffffff; /* Ajuste a cor de fundo do botão */
+    border: 2px solid #003366; /* Borda azul escura */
+    cursor: pointer; /* Indica que o botão é clicável */
+}
+
+.botao1 .icone {
+    width: 50px; /* Defina o tamanho da imagem */
+    height: 50px; /* Defina o tamanho da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-left: 10px; /* Ajusta a posição do ícone para a direita */
+}
+
+.botao1 span {
+    font-size: 16px; /* Ajuste o tamanho da fonte do texto */
+    color: black;
+    font-weight: bold; /* Fonte grossa (negrito) */
+}
+
+
+.botao2 {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    padding: 10px 20px; /* Ajuste o espaçamento conforme necessário */
+    background-color: #ffffff; /* Ajuste a cor de fundo do botão */
+    border: 2px solid #003366; /* Borda azul escura */
+    cursor: pointer; /* Indica que o botão é clicável */
+}
+
+.botao2 .icone {
+    width: 20px; /* Defina o tamanho da imagem */
+    height: 20px; /* Defina o tamanho da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.botao2 span {
+    font-size: 16px; /* Ajuste o tamanho da fonte do texto */
+    color: black;
+    font-weight: bold; /* Fonte grossa (negrito) */
+}
+
+
+
+.botao3 {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    padding: 10px 20px; /* Ajuste o espaçamento conforme necessário */
+    background-color: #ffffff; /* Ajuste a cor de fundo do botão */
+    border: 2px solid #003366; /* Borda azul escura */
+    cursor: pointer; /* Indica que o botão é clicável */
+}
+
+.botao3 .icone {
+    width: 20px; /* Defina o tamanho da imagem */
+    height: 20px; /* Defina o tamanho da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.botao3 span {
+    font-size: 16px; /* Ajuste o tamanho da fonte do texto */
+    color: black;
+    font-weight: bold; /* Fonte grossa (negrito) */
+}
