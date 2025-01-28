@@ -1,33 +1,36 @@
-  /* Fundo da página */
-  body {
+/* Fundo da página */
+body {
     background-image: url('../img/fundopiscina.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: 100vh; /* Limita a altura do corpo à altura da janela */
+    overflow-y: hidden; /* Remove a barra de rolagem vertical */
     display: flex;
     flex-direction: column;
 }
+
+
 
 .custom-container {
     background-color: #e9f5ff;
     /* Cor de fundo azul claro */
     border-radius: 15px;
     /* Bordas arredondadas */
-    padding: 30px;
-    /* Espaçamento interno */
+    padding: 10px;
+    /* Espaçamento interno reduzido */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     /* Sombra suave */
     border: 3px solid #003366;
-    /* Borda fina e branca */
-    height: 600px;
-    /* Altura fixa para o container */
-    width: 1000px;
-    overflow-y: auto;
-    /* Adiciona a barra de rolagem vertical */
+    height: 400px; /* Altura ajustada */
+    width: 800px; /* Largura ajustada */
+    overflow-y: auto; /* Permite rolagem vertical */
+    overflow-x: hidden; /* Impede rolagem horizontal */
 }
+
+
 
 /* Personalizar barra de rolagem */
 .custom-container::-webkit-scrollbar {
@@ -114,4 +117,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+/* Estilo personalizado para o botão */
+button.btn-success {
+    background-color: #003366; /* Cor de fundo azul */
+    border: none; /* Remove a borda */
+    color: white; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mãozinha */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+/* Efeito ao passar o mouse */
+button.btn-success:hover {
+    background-color: #002244; /* Cor de fundo mais escura quando o mouse passa */
 }
