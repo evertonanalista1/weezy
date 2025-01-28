@@ -11,15 +11,15 @@
 
     <!-- Div para os botões -->
     <div class="botoes-container">
-    <button class="botao1">
-    <img src="../img/cadastro.png" alt="icone 1" class="icone">
-    <span>Cadastro</span>
-    </button>
+    <button class="botao1" onclick="window.location.href='http://localhost/weezy/pages/dados'">
+  <img src="../img/cadastro.png" alt="icone 1" class="icone">
+  <span>Cadastro</span>
+</button>
     <button class="botao2">
         <img src="../img/pagamento.png" alt="Icone 2">
         <span>Pagamento</span>
     </button>
-    <button class="botao3">
+    <button class="botao3" onclick="window.location.href='http://localhost/weezy/pages/alunos'" >
         <img src="../img/alunos.png" alt="Icone 3">
         <span>Alunos</span>
     </button>
