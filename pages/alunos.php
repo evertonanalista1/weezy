@@ -22,7 +22,7 @@
     <div class="title-line"></div>
 
     <div class="container-wrapper">
-    <div class="custom-container">
+        <div class="custom-container">
             <form class="search-box">
                 <div class="input-group shadow">
                     <span class="input-group-text">
