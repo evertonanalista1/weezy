@@ -1,0 +1,148 @@
+/* Fundo da página */
+body {
+    background-image: url('../img/fundopiscina.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Limita a altura do corpo à altura da janela */
+    overflow-y: hidden; /* Remove a barra de rolagem vertical */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.custom-container {
+    background-color: #e9f5ff;
+    /* Cor de fundo azul claro */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    padding: 10px;
+    /* Espaçamento interno reduzido */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    border: 3px solid #003366;
+    height: 400px; /* Altura ajustada */
+    width: 800px; /* Largura ajustada */
+    overflow-y: auto; /* Permite rolagem vertical */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+}
+
+
+
+/* Personalizar barra de rolagem */
+.custom-container::-webkit-scrollbar {
+    width: 8px;
+    /* Largura da barra de rolagem */
+}
+
+.custom-container::-webkit-scrollbar-track {
+    background: #e9f5ff;
+    /* Cor do fundo da barra */
+    border-radius: 10px;
+    /* Deixa o fundo arredondado */
+}
+
+.custom-container::-webkit-scrollbar-thumb {
+    background: #003366;
+    /* Cor do "polegar" (barra rolável) */
+    border-radius: 10px;
+    /* Arredondamento da barra */
+}
+
+
+/* Remove as setas padrão da barra de rolagem */
+.custom-container::-webkit-scrollbar-button {
+    display: none;
+}
+
+.search-box {
+    margin-top: 15px;
+    /* Espaçamento superior */
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    /* Fundo claro para o ícone */
+    border: none;
+}
+
+.form-control {
+    border: none;
+    /* Remove bordas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+/* Estilo do título */
+.title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    /* Fonte estilosa */
+    font-size: 2.5rem;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Negrito */
+    color: #ffffff;
+    /* Cor branca */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Sombra no texto */
+    margin-bottom: 10px;
+    /* Reduzi o espaçamento inferior para a linha */
+    margin-top: 50px;
+    /* Adicionado espaço superior para descer o título */
+}
+
+/* Linha abaixo do título */
+.title-line {
+    width: 200px;
+    /* Largura da linha */
+    height: 4px;
+    /* Altura da linha */
+    background-color: #003366;
+    /* Cor branca */
+    margin: 0 auto;
+    /* Centraliza a linha */
+    border-radius: 5px;
+    /* Deixa as bordas da linha arredondadas */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Adiciona uma sombra leve */
+}
+
+.container-wrapper {
+    flex: 1;
+    /* Garante que o conteúdo ocupe o espaço disponível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cadastrarbtn {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Garante que o botão use a largura total disponível */
+    margin-top: 40px; /* Aumente o espaçamento superior */
+    margin-bottom: 16px; /* Adiciona margem inferior */
+    padding-top: 20px; /* Adiciona espaçamento interno na parte superior */
+}
+
+
+.cadastrarbtn .btn {
+    background-color: #003366;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cadastrarbtn .btn:hover {
+    background-color: #00509e;
+}
+

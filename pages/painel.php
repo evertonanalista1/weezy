@@ -15,7 +15,7 @@
   <img src="../img/cadastro.png" alt="icone 1" class="icone">
   <span>Cadastro</span>
 </button>
-    <button class="botao2">
+    <button class="botao2" onclick="window.location.href='http://localhost/weezy/pages/pagamento'">
         <img src="../img/pagamento.png" alt="Icone 2">
         <span>Pagamento</span>
     </button>
